@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset name="wp-test-assertions">
+	<description>Coding standards for WP Test Assertions.</description>
+
+	<!-- Check all PHP files in directory tree by default. -->
+	<arg name="extensions" value="php"/>
+	<file>./src/</file>
+	<file>./tests/</file>
+	<exclude-pattern>./tests/coverage</exclude-pattern>
+
+	<!-- Show progress and sniff codes in all reports -->
+	<arg value="ps"/>
+
+	<!-- PHP Compatibility sniffs. -->
+	<rule ref="PHPCompatibility"/>
+	<config name="testVersion" value="5.4-" />
+
+	<rule ref="PSR2" />
+</ruleset>
