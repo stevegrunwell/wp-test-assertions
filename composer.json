@@ -1,0 +1,35 @@
+{
+    "name": "stevegrunwell/wp-test-assertions",
+    "description": "Additional PHPUnit assertions for testing WordPress plugins and themes.",
+    "keywords": ["phpunit", "testing", "wordpress"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Grunwell",
+            "homepage": "https://stevegrunwell.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/stevegrunwell/wp-test-assertions/issues",
+        "source": "https://github.com/stevegrunwell/wp-test-assertions/"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "scripts": {
+        "test-coverage": [
+            "phpunit --coverage-html=tests/coverage"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "SteveGrunwell\\WP_Test_Assertions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
